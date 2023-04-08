@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>KOPPEE - Coffee Shop HTML Template</title>
+    <title>LUCKY - Coffee </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
@@ -24,13 +24,14 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{{asset('public/Fontend/css/style.min.css')}}" rel="stylesheet">
+    
 </head>
 
 <body>
-@include('User.Customers.Managers.Layouts.Nav.index')
-@include('User.Customers.Managers.Layouts.Carousel.index')
+@include(env("URLFOLDERCUS").'Layouts.Nav.index')
+@include(env("URLFOLDERCUS").'Layouts.Carousel.index')
 @yield('Pages')
-@include('User.Customers.Managers.Layouts.Footer.index')
+@include(env("URLFOLDERCUS").'Layouts.Footer.index')
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
@@ -50,6 +51,7 @@
 
     <!-- Template Javascript -->
     <script src="{{asset('public/Fontend/js/main.js')}}"></script>
+    
 </body>
 
 </html>

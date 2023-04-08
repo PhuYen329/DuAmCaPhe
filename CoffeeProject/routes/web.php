@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\SatffsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +14,7 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/',[UserController::class,'index']);
+Route::get('/',[Customercontroller::class,'index']);
+Route::get('login',[Customercontroller::class,'login']);
+Route::get('manager', [SatffsController::class,'index']);
+

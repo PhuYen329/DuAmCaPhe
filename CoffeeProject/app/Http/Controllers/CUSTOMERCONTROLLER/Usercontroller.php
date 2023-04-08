@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class Usercontroller 
 {
     public function index(){
-        return view(env("URLFOLDER")."Pages.Home.index");
+        return view(env("URLFOLDERCUS")."Pages.Home.index");
     }
 }
